@@ -11,4 +11,4 @@ def run():
     print('List of fields')
     print(set(fields))
 
-    fillpdfs.write_fillable_pdf('forms/J294 - Death Notice.pdf', 'forms/J294 - Death Notice_filled.pdf', {'0': '9602215094081'})
+    fillpdfs.write_fillable_pdf('forms/J294 - Death Notice.pdf', 'test/J294 - Death Notice_filled.pdf', {'0': '9602215094081'})
