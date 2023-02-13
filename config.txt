@@ -1,0 +1,35 @@
+- file: "J294.-.Death.Notice.pdf"
+  fields:
+    - id: '0'
+    - Full name: 'Full name'
+    - 
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+
+
+
+- file: "J294.-.Death.Notice.pdf"
+  fields:
+    - id: '0'
+    - Full name: 'Full name'
+
+

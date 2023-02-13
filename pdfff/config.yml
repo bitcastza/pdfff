@@ -1,0 +1,195 @@
+
+- file: "J155 - Undertaking and Acceptance of Masters Directions.pdf"
+  fields:
+    - id: 'Text4-1'
+    - Full name: ''
+    - Full name 2: ''
+    - ESTATE No.: 'Text1'
+    - died on: 'Text3'
+    - District where deceased was residing: 'Text5'
+    - Full names of applicant: 'Text6'
+    - Applicant Identity number: 'Text7-1'
+    - Relationship to deceased: 'Text8'
+    - Residential address1: 'Text9-1'
+    - Residential address2: 'Text9-2'
+    - Residential address3: 'Text9-3'
+    - Postal address1: 'Text10-1'
+    - Postal address2: 'Text10-2'
+    - Postal address3: 'Text10-3'
+    - Telephone number (Home)1: 'Text9-4'
+    - Telephone number (Home)2: 'Text9-5'
+    - Telephone number (Work)1: 'Text10-4'
+    - Telephone number (Work)2: 'Text10-5'
+    - Name and postal address of agent (if applicable)1: 'Text11-1'
+    - Name and postal address of agent (if applicable)2: 'Text11-2'
+    - Telephone number1: 'Text11-3'
+    - Telephone number2: 'Text11-4'
+    - Confirm1: ''
+    - Confirm2: ''
+    - Confirm3: ''
+    - PRINT NAME AND SURNAME: 'Text13'
+
+- file: "J190 - Acceptance of Trust as Executor.pdf"
+  fields:
+    - Estate No: 'Estate No'
+    - Full name: 'lWe full names and surname'
+    - Business address: 'Business address1'
+    - ID: 'ID'
+    - Relationship to Deceased: 'Relationship to deceased'
+    - Full names and surname: 'Full names and surname'
+    - Date of birth: 'Date of birth'
+    - Date of death: 'Date of death'
+    - Identity No: 'Identity No'
+    - Income tax ref No: 'Income tax ref No'
+    - District in which deceased normally resided: 'District in which deceased normally resided'
+    - Name of surviving spouse: 'Name of surviving spouse in case of deceased having been a married woman'
+    - Domicilium citandi et executandi: 'contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number'
+    - Bond of Security: 'rand'
+    - Name and Address of my Agent: 'yes'
+    - signed at: 'signed at'
+    - signed on: 'signed on'
+    - year: 'year'
+    - Name and Surname: 'PRINT NAME AND SURNAME'
+
+- file: "J192 - Next of Kin Affidavit.pdf"
+  fields:
+    - id: 'Text4'
+    - Full name: 'I'
+    - of1: 'of 1'
+    - of 2: 'of 2'
+    - Full name: 'Print Name and Surname'
+    - at: 'at'
+    - day of: 'day of'
+    - year: 'year'
+    - Surviving Spouse: 'Names of relatives and degree of relationship1  Surviving spouse'
+    - Parents: 'Names of relatives and degree of relationshipIgnore questions 3 4 and 5 if the deceased left children or descendants 3 Father of deceased Mother of deceased'
+    - Siblings: 'Names of relatives and degree of relationshipIgnore questions 4 and 5 if the parents are both alive 4  Brothers and sisters of the deceased  State whether full or half blood and their addresses and dates of birth State the name of the stepparent of half b\rothers and half sisters'
+    - SiblingsDead: 'Names of relatives and degree of relationship5 Names of brothers and sisters who are dead date of deaths and names addresses and dates of birth of their children if any'
+
+- file: "J243 - Estate Inventory.pdf"
+  fields:
+    - Name: 'name'
+    - Surviving spouse full name: 'Full name of surviving spouse in a case where spouses were married in community of property'
+    - Surviving spouse address: 'Address of surviving spouse'
+    - Massed estate: 'Massed estate of'
+    - Minors full names: 'Full names of minors under tutorship or person in respect of whose property letters of curatorship have been granted'
+    - Full address: 'Full address'
+    - Premises: 'premises at'
+    - Place: 'Place'
+    - Date: 'Date'
+    - Name and surname: 'name and surname'
+
+- file: "J294.-.Death.Notice.pdf"
+  fields:
+    - id: '0'
+    - Surname: '1'
+    - First Names: '2' 
+    - Population Group: '1_2' 
+    - Nationality: '5 Nationality' 
+    - Occupation: '2_2' 
+    - Ordinary place(s) of residence during the 12 months prior to death and the Province(s): '7 Ordinary places of residence during the 12 months prior to death and the Provinces' 
+    - Date of birth: 
+    - Place of birth: '9 Place of birth' 
+    - Date of death: 
+    - Has the deceased left a will?: '11Has the deceased left a will'
+    - Marital status at time of death: '12 Marital status at time of death'
+    - If married, place where married: '13 If married place where married'
+    - Full names of surviving spouse: '14 Full names of surviving spouse'
+    - and his/her ID/Passport number: 'and hisher IDPassport number'
+    - State whether marriage was in or out of community of property/whether accrual system is applicable.: '15 State whether marriage was in or out of community of propertywhether accrual system is applicable'
+    - (a) Name(s) of predeceased spouse(s) and/or divorced spouse(s) (state opposite name of each whether predeceased or divorced): 'a Names of predeceased spouses andor divorced spouses state opposite name of each whether predeceased or divorced'
+    - (b) Date of death of predeceased spouse(s): 'b Date of death of predeceased spouses'
+    - Master's office(s) where predeceased’s estate(s) is/are registered and number(s) of estate(s), if available: '16 Masters offices where predeceaseds estates isare registered and numbers of estates if available'
+    - Full names of children of deceased (state whether major or minor or predeceased and in the latter event, whether they left issue and, if that be the case, the full names of such issue): 'if that be the case the full names of such issue 1'
+    - (a) Father: 'a Father'
+    - (b) Mother : 'b Mother'
+    - Name and address of person signing the death notice: '19 Name and address of person signing the death notice'
+    - Capacity: '20 Capacity'
+    - (a) Was the signatory present at the deceased's death?: '21 a Was the signatory present at the deceaseds death'
+    - (b) If the answer to the previous question is no, did the signatory identify the deceased after his death?: 'b If the answer to the previous question is no did the signatory identify the deceased after his death'
+    - Dated at: 
+    - the: 
+    - day of: 
+    - in the year: 'in the year'
+
+- file: "Marital Status Declaration.pdf"
+  fields:
+    - Name: 'I'
+    - Address: 'Of Address 1'
+    - DeceasedName: 'Deseaced'
+    - KnownSince: 'Was well known to me since'
+    - SignedAndSworn: 'Signed and sworn toaffirmed before me at'
+    - Day: 'This'
+    - Month: 'Day of'
+    - Year: 'in the year'
+    - Area for which appointed: 'Area for which appointed'
+
+- file: "Nomination to Act as Executor or Masters Representative.pdf"
+  fields:
+    - Estate late: 'Estate late',
+    - I  We the undersigned hereby nominates: 'I  We the undersigned hereby nominates',
+    - NameRow1: 'NameRow1',
+    - Relationship  CapacityRow1: 'Relationship  CapacityRow1',
+    - DateRow1: 'DateRow1',
+    - NameRow2: 'NameRow2',
+    - Relationship  CapacityRow2: 'Relationship  CapacityRow2',
+    - DateRow2: 'DateRow2',
+    - NameRow3: 'NameRow3',
+    - Relationship  CapacityRow3: 'Relationship  CapacityRow3',
+    - DateRow3: 'DateRow3',
+    - NameRow4: 'NameRow4',
+    - Relationship  CapacityRow4: 'Relationship  CapacityRow4',
+    - DateRow4: 'DateRow4',
+    - NameRow5: 'NameRow5',
+    - Relationship  CapacityRow5: 'Relationship  CapacityRow5',
+    - DateRow5: 'DateRow5',
+    - NameRow6: 'NameRow6',
+    - Relationship  CapacityRow6: 'Relationship  CapacityRow6',
+    - DateRow6: 'DateRow6',
+    - NameRow7: 'NameRow7',
+    - Relationship  CapacityRow7: 'Relationship  CapacityRow7',
+    - DateRow7: 'DateRow7',
+    - NameRow8: 'NameRow8',
+    - Relationship  CapacityRow8': 'Relationship  CapacityRow8',
+    - DateRow8: 'DateRow8',
+    - NameRow9: 'NameRow9',
+    - Relationship  CapacityRow9': 'Relationship  CapacityRow9',
+    - DateRow9: 'DateRow9',
+    - NameRow10: 'NameRow10',
+    - Relationship  CapacityRow10': 'Relationship  CapacityRow10',
+    - DateRow10: 'DateRow10',
+    - NameRow11: 'NameRow11',
+    - Relationship  CapacityRow11': 'Relationship  CapacityRow11',
+    - DateRow11: 'DateRow11',
+    - NameRow12: 'NameRow12',
+    - Relationship  CapacityRow12': 'Relationship  CapacityRow12',
+    - DateRow12: 'DateRow12',
+    - NameRow13: 'NameRow13',
+    - Relationship  CapacityRow13': 'Relationship  CapacityRow13',
+    - DateRow13: 'DateRow13',
+    - NameRow14: 'NameRow14',
+    - Relationship  CapacityRow14': 'Relationship  CapacityRow14',
+    - DateRow14: 'DateRow14',
+    - NameRow15: 'NameRow15',
+    - Relationship  CapacityRow15': 'Relationship  CapacityRow15',
+    - DateRow15: 'DateRow15',
+    - NameRow16: 'NameRow16',
+    - Relationship  CapacityRow16': 'Relationship  CapacityRow16',
+    - DateRow16: 'DateRow16',
+    - NameRow17: 'NameRow17',
+    - Relationship  CapacityRow17': 'Relationship  CapacityRow17',
+    - DateRow17: 'DateRow17'
+
+- file: "Reporting Affidavit.pdf"
+  fields:
+    - Name: 'I'
+    - estate: 'estate'
+    - the late: 'the late'
+    - Answer1: 'Answer'
+    - Answer2: 'Answer2'
+    - Answer3: 'Answer3'
+    - SignedAndSworn: 'Signed and sworn toaffirmed before me at'
+    - Day: 'This'
+    - Month: 'Day of'
+    - Year: 'in the year'
+    - Area for which appointed: 'Area for which appointed'
