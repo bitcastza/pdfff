@@ -11,65 +11,50 @@ data = {}
 def getInput():        
     index = -1
     print("Input Anything To Continue:")
-    for line in sys.stdin:
-        if (index == -1) :
-            print(data)
-            print("Please insert your surname:")
-            data[0]= line.strip('\n')
-            del data[0]
-            index = 0
 
-        elif (index == 0) :
-            data[0]= line.strip('\n')
-            print(data)
-            print("Please insert your first names:")
-            index = 1
+    questions = [
+        "Please insert your surname: ",
+        "Please insert your first names: ",
+        "Please insert your ID: ",
+        "Please insert your birth date (DD/MM/YYYY): ",
+        "Please insert your telephone number: ",
+        "Please insert the current date (DD/MM/YYYY): ",
+        "Please insert your birth place: ",
+        "Please insert deceased date of birth (DD/MM/YYYY): ",
+        "Please insert deceased ID: ",
+        "Please insert your nationality: ",
+        "Please insert your occupation: ",
+        "Please insert your address: ",
+        "Please insert the name of the deceased: ",
+    ]
 
-        elif (index == 1) :
-            data[1]= line.strip('\n')
-            print(data)
-            print("Please insert your ID:")
-            index = 2
 
-        elif (index == 2) :
-            data[2]= line.strip('\n')
-            print(data)
-            print("Please insert your birth date (DD/MM/YYYY):")
-            index = 3
-            
-        elif (index == 3) :
-            data[3]= line.strip('\n')
-            print(data)
-            print("Please insert your telephone number:")
-            index = 4
-            
-        elif (index == 4) :
-            data[4]= line.strip('\n')
-            print(data)
-            print("Please insert the current date (DD/MM/YYYY):")
-            index = 5
-            
-        elif (index == 5) :
-            data[5]= line.strip('\n')
-            print(data)
-            print("Please insert your birth place:")
-            index = 6
-            
+    answers = [
+        "", "", "", "", "", "", "", "", "", "",
+        "", "", "", "", "", "", "", "", "", ""
+        ]
 
-        else :
-            break
-    data[index]= line.strip('\n')
-    print(data)
-    print("\n\n\n\n DONE \n\n\n\n")
+    qIndex = 0
+    for i in range(len(questions)):
+        print(answers)
+        print("\n\n")
+        answers[i] = input(questions[i])
+        print("\n\n")
+        qIndex += 1
+
+    print(answers)
+    print("\n\n\n\n")
+    return answers
+
+    
 
 
 def run():
 
-    config = parse_config('pdfff/config.yml')
-    
-    
-    getInput()
-
+    config = parse_config('pdfff/config.yml')  
+    UserDetails = getInput()
+  
+  
     source = Path('forms')
     fields = []
     for f in source.glob('*.pdf'):
@@ -79,37 +64,36 @@ def run():
     print('List of fields')
     print(set(fields))
 
-    uTelNum = data[4]
+    print('List of fields \n\n\n')
+
+    file = "file"
+    for i in range(7):
+        fileCounter = i+1
+        fileName = file + str(fileCounter)
+
+        config[fileName]['fullname']  = f"{UserDetails[1]} {UserDetails[0]}"
+        config[fileName]['id'] = UserDetails[2]
+        config[fileName]['Date'] = UserDetails[5]
+        config[fileName]['Surname'] = UserDetails[0]
+        config[fileName]['First Names'] = UserDetails[1]
+        config[fileName]['Nationality'] = UserDetails[9]
+        config[fileName]['Occupation'] = UserDetails[10]
+        config[fileName]['Place of birth'] = UserDetails[6]
+        config[fileName]['Address'] = UserDetails[11]
+        config[fileName]['DeceasedName'] = UserDetails[12]
 
 
-    FIRSTNAME = data[1]
-    SURNAME = data[0]
-    IDNUM = data[2]
-    SURVIVING_SPOUSE_NAME = "null"
-    SURVIVING_SPOUSE_ADDRESS = "null"
-    CURRENT_DATE = data[5]
-    NATIONALITY = "null"
-    OCCUPATION = "null"
-    BIRTH_DATE = data[3]
-    BIRTH_PLACE = data[6]
-    ADDRESS = "null"
-    DECEASED_NAME = "null"
-    KNOWN_SINCE = "null"
-    SIGNED_AND_SWORN = "null"
-    ESTATE_LATE = "null"
-    NOMINATES = "null"
-    NAME_ROW_1 = "null"
-    RELATIONSHIP = "null"
-    CAPACITY_ROW_1 = "null"
-    DATE_ROW_1 = "null"
-    ESTATE = "null"
-    ANSWER_1 = "null"
-    ANSWER_2 = "null"
-    ANSWER_3 = "null"
-
+        # ---Additional fields that could be added---
+            # config[fileName]['Estate late'] = ""
+            # config[fileName]['nominates'] = ""
+            # config[fileName]['Relationship  CapacityRow1'] = ""
+            # config[fileName]['DateRow1'] = ""
+            # config[fileName]['estate'] = ""
+            # config[fileName]['Answer1'] = ""
+        
+    print("\n\n Config File: \n\n")
     print(config)
-
-
+    
 
 if __name__ == "__main__":
     run()

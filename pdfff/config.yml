@@ -1,54 +1,54 @@
 file1:
     filename: J155 - Undertaking and Acceptance of Masters Directions.pdf
-    fullname: !ENV ${FIRSTNAME}  ${SURNAME}
-    id: !ENV ${IDNUM}
-    url: !ENV 'http://${DB_BASE_URL}:${DB_PORT}'
+    fullname: 
+    id: 
+    url: 
 
 file2:
     filename: J190 - Acceptance of Trust as Executor.pdf
-    fullname: !ENV ${FIRSTNAME} ${SURNAME}
-    id: !ENV ${IDNUM}
-    url: !ENV 'http://${DB_BASE_URL}:${DB_PORT}'
+    fullname: 
+    id: 
+    url: 
 
 file3: 
     filename: J243 - Estate Inventory.pdf
-    Name: !ENV ${FIRSTNAME}  ${SURNAME}
-    Surviving spouse full name: !ENV ${SURVIVING_SPOUSE_NAME}
-    Surviving spouse address: !ENV ${SURVIVING_SPOUSE_ADDRESS}
-    Date: !ENV ${CURRENT_DATE}
-    Name and surname: !ENV ${FIRSTNAME}  ${SURNAME}
+    fullname: 
+    Surviving spouse full name: 
+    Surviving spouse address: 
+    Date: 
+    Name and surname: 
 
 file4: 
     filename: J294.-.Death.Notice.pdf
-    id: !ENV ${IDNUM}
-    Surname: !ENV ${SURNAME}
-    First Names: !ENV ${FIRSTNAME} 
-    Nationality: !ENV ${NATIONALITY} 
-    Occupation: !ENV ${OCCUPATION}
-    Date of birth: !ENV ${BIRTH_DATE}
-    Place of birth: !ENV ${BIRTH_PLACE} 
+    id: 
+    Surname: 
+    First Names: 
+    Nationality: 
+    Occupation: 
+    Date of birth: 
+    Place of birth: 
 
 file5: 
     filename: Marital Status Declaration.pdf
-    Name: !ENV ${FIRSTNAME}  ${SURNAME}
-    Address: !ENV ${ADDRESS}
-    DeceasedName: !ENV ${DECEASED_NAME}
-    KnownSince: !ENV ${KNOWN_SINCE}
-    SignedAndSworn: !ENV ${SIGNED_AND_SWORN}
+    fullname: 
+    Address: 
+    DeceasedName: 
+    KnownSince: 
+    SignedAndSworn: 
 
 file6: 
     filename: Nomination to Act as Executor or Masters Representative.pdf
-    Estate late: !ENV ${ESTATE_LATE}
-    nominates: !ENV ${NOMINATES}
-    NameRow1: !ENV ${NAME_ROW_1}
-    Relationship  CapacityRow1: !ENV ${RELATIONSHIP}  ${CAPACITY_ROW_1}
-    DateRow1: !ENV ${DATE_ROW_1}
+    Estate late: 
+    nominates: 
+    NameRow1: 
+    Relationship  CapacityRow1: 
+    DateRow1: 
 
 file7: 
     filename: Reporting Affidavit.pdf
-    Name: !ENV ${FIRSTNAME} ${SURNAME}
-    estate: !ENV ${ESTATE}
-    Answer1: !ENV ${ANSWER_1}
-    Answer2: !ENV ${ANSWER_2}
-    Answer3: !ENV ${ANSWER_3}
-    SignedAndSworn: !ENV ${SIGNED_AND_SWORN}
+    fullname: 
+    estate: 
+    Answer1: 
+    Answer2: 
+    Answer3: 
+    SignedAndSworn: 
