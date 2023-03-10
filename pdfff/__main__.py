@@ -7,54 +7,95 @@ import yaml
 
 data = {}
 
-
 def getInput():        
-    index = -1
     print("Input Anything To Continue:")
 
     questions = [
-        "Please insert your surname: ",
-        "Please insert your first names: ",
-        "Please insert your ID: ",
-        "Please insert your birth date (DD/MM/YYYY): ",
-        "Please insert your telephone number: ",
-        "Please insert the current date (DD/MM/YYYY): ",
-        "Please insert your birth place: ",
-        "Please insert deceased date of birth (DD/MM/YYYY): ",
-        "Please insert deceased ID: ",
-        "Please insert your nationality: ",
-        "Please insert your occupation: ",
-        "Please insert your address: ",
-        "Please insert the name of the deceased: ",
+        "surname",
+        "first name",        
+        "id",
+        "Deceased ID",
+        "Deceased Full Name",
+        "Estate No",
+        "Deceased Date of Death",
+        "Deceased District",
+        "fullname",
+        "Relationship to deceased",
+        "Residential Address",
+        "Postal Address",
+        "Home Tel",
+        "Work Tel",
+        "Agent Name and Postal Address",
+        "Agent Tel",
+        "Confirm",
+        "Business Address",
+        "Deceased date of birth",
+        "Deceased Income Tax Ref. No",
+        "Surviving Spouse Name",
+        "Domicilium citandi et executandi",
+        "Bond of Security",
+        "Signed At",
+        "Current Day and Month",
+        "Current Year",
+        "fullname and id",
+        "Current Day",
+        "Current Month",
+        "Magistrate",
+        "Appointed Area",
+        "State Office Held",
+        "Deceased Place of Death",
+        "Children Info",
+        "Father of Deceased",
+        "Mother of Deceased",
+        "Sibling Info",
+        "Dead Sibling Info",
+        "Surviving Spouse Address",
+        "Massed Estate",
+        "Minors Under Tutorship",
+        "Address Granted",
+        "Current Date",
+        "Deceased Surname",
+        "Deceased First Names",
+        "Deceased Population Group",
+        "Deceased Nationality",
+        "Deceased Occupation",
+        "Deceased Residence",
+        "Deceased Place of Birth",
+        "Deceased Will",
+        "Deceased Marital Status",
+        "Deceased Place of Marriage",
+        "Surviving Spouse ID",
+        "Marriage Info",
+        "Predeceased or Divorced Spouse Names",
+        "Predeceased Spouse Date of Death",
+        "Names of Children of Deceased",
+        "fullname and address",
+        "Capacity",
+        "Signatory Presence",
+        "KnownSince",
+        "Deceased Wives",
+        "Deceased Customary Unions",
+        "Person Nominated",
+        "Answer1",
+        "Answer2",
+        "Answer3",
+        "Estate Late"
     ]
 
+    answers = {}
 
-    answers = [
-        "", "", "", "", "", "", "", "", "", "",
-        "", "", "", "", "", "", "", "", "", ""
-        ]
-
-    qIndex = 0
-    for i in range(len(questions)):
-        print(answers)
-        print("\n\n")
-        answers[i] = input(questions[i])
-        print("\n\n")
-        qIndex += 1
+    for question in questions:
+        answers[question] = input(f"Please insert {question}: ")
 
     print(answers)
-    print("\n\n\n\n")
+    print("\n\n")
     return answers
-
-    
 
 
 def run():
-
     config = parse_config('pdfff/config.yml')  
-    UserDetails = getInput()
-  
-  
+    user_details = getInput()
+    
     source = Path('forms')
     fields = []
     for f in source.glob('*.pdf'):
@@ -66,31 +107,16 @@ def run():
 
     print('List of fields \n\n\n')
 
-    file = "file"
-    for i in range(7):
-        fileCounter = i+1
-        fileName = file + str(fileCounter)
 
-        config[fileName]['fullname']  = f"{UserDetails[1]} {UserDetails[0]}"
-        config[fileName]['id'] = UserDetails[2]
-        config[fileName]['Date'] = UserDetails[5]
-        config[fileName]['Surname'] = UserDetails[0]
-        config[fileName]['First Names'] = UserDetails[1]
-        config[fileName]['Nationality'] = UserDetails[9]
-        config[fileName]['Occupation'] = UserDetails[10]
-        config[fileName]['Place of birth'] = UserDetails[6]
-        config[fileName]['Address'] = UserDetails[11]
-        config[fileName]['DeceasedName'] = UserDetails[12]
+    for config_file in config:
+        output_fields = {}
+        for question_id,field in config_file["fields"].items():
+            try:
+                output_fields[field] = user_details[question_id]
+            except KeyError:
+                continue
+        fillpdfs.write_fillable_pdf(f"forms/{config_file['filename']}", f"test/{config_file['filename']}", output_fields, False)
 
-
-        # ---Additional fields that could be added---
-            # config[fileName]['Estate late'] = ""
-            # config[fileName]['nominates'] = ""
-            # config[fileName]['Relationship  CapacityRow1'] = ""
-            # config[fileName]['DateRow1'] = ""
-            # config[fileName]['estate'] = ""
-            # config[fileName]['Answer1'] = ""
-        
     print("\n\n Config File: \n\n")
     print(config)
     
