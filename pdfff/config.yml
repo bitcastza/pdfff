@@ -1,6 +1,5 @@
 - filename: J155 - Undertaking and Acceptance of Masters Directions.pdf
   fields:
-    id: Text7-1
     Deceased ID: Text4-1 
     Deceased Full Name: Text2
     Estate No: Text1
@@ -36,7 +35,7 @@
     Signed At: signed at
     Current Day and Month: signed on
     Current Year: year
-    fullname: PRINT NAME AND SURNAME
+    name and surname: PRINT NAME AND SURNAME
 #---------------------------------------------------------------------------------------------------
 - filename: J192 - Next of Kin Affidavit.pdf
   fields:
@@ -73,7 +72,7 @@
     Deceased Place of Death: premises at
     Signed At: Place
     Current Date: Date
-    fullname: name and surname
+    name and surname: name and surname
 #---------------------------------------------------------------------------------------------------
 - filename: J294 - Death Notice.pdf
   fields:

@@ -79,7 +79,8 @@ def getInput():
         "Answer1",
         "Answer2",
         "Answer3",
-        "Estate Late"
+        "Estate Late",
+        "name and surname"
     ]
 
     answers = {}
@@ -106,7 +107,6 @@ def run():
     print(set(fields))
 
     print('List of fields \n\n\n')
-
 
     for config_file in config:
         output_fields = {}
