@@ -19,7 +19,6 @@ def getInput():
         "Estate No",
         "Deceased Date of Death",
         "Deceased District",
-        "fullname",
         "Relationship to deceased",
         "Residential Address",
         "Postal Address",
@@ -80,13 +79,15 @@ def getInput():
         "Answer2",
         "Answer3",
         "Estate Late",
-        "name and surname"
     ]
 
     answers = {}
 
     for question in questions:
         answers[question] = input(f"Please insert {question}: ")
+        
+    answers["fullname"] = f"{answers['first name']} {answers['surname']}"
+    answers["name and surname"] = f"{answers['first name']} {answers['surname']}"
 
     print(answers)
     print("\n\n")
