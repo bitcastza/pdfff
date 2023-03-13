@@ -1,45 +1,103 @@
 from pathlib import Path
 from fillpdf import fillpdfs
+from pyaml_env import parse_config, BaseConfig
 import logging
 import sys
+import yaml
 
-def getInput():
-    data = {}
+data = {}
 
-    index = -1
+def getInput():        
     print("Input Anything To Continue:")
-    for line in sys.stdin:
-        if (index == -1) :
-            print(data)
-            print("Please insert your surname:")
-            data[0]= line.strip('\n')
-            del data[0]
-            index = 0
 
-        elif (index == 0) :
-            data[0]= line.strip('\n')
-            print(data)
-            print("Please insert your first names:")
-            index = 1
+    questions = [
+        "surname",
+        "first name",        
+        "id",
+        "Deceased ID",
+        "Deceased Full Name",
+        "Estate No",
+        "Deceased Date of Death",
+        "Deceased District",
+        "Relationship to deceased",
+        "Residential Address",
+        "Postal Address",
+        "Home Tel",
+        "Work Tel",
+        "Agent Name and Postal Address",
+        "Agent Tel",
+        "Confirm",
+        "Business Address",
+        "Deceased date of birth",
+        "Deceased Income Tax Ref. No",
+        "Surviving Spouse Name",
+        "Domicilium citandi et executandi",
+        "Bond of Security",
+        "Signed At",
+        "Current Day and Month",
+        "Current Year",
+        "fullname and id",
+        "Current Day",
+        "Current Month",
+        "Magistrate",
+        "Appointed Area",
+        "State Office Held",
+        "Deceased Place of Death",
+        "Children Info",
+        "Father of Deceased",
+        "Mother of Deceased",
+        "Sibling Info",
+        "Dead Sibling Info",
+        "Surviving Spouse Address",
+        "Massed Estate",
+        "Minors Under Tutorship",
+        "Address Granted",
+        "Current Date",
+        "Deceased Surname",
+        "Deceased First Names",
+        "Deceased Population Group",
+        "Deceased Nationality",
+        "Deceased Occupation",
+        "Deceased Residence",
+        "Deceased Place of Birth",
+        "Deceased Will",
+        "Deceased Marital Status",
+        "Deceased Place of Marriage",
+        "Surviving Spouse ID",
+        "Marriage Info",
+        "Predeceased or Divorced Spouse Names",
+        "Predeceased Spouse Date of Death",
+        "Names of Children of Deceased",
+        "fullname and address",
+        "Capacity",
+        "Signatory Presence",
+        "KnownSince",
+        "Deceased Wives",
+        "Deceased Customary Unions",
+        "Person Nominated",
+        "Answer1",
+        "Answer2",
+        "Answer3",
+        "Estate Late",
+    ]
 
-        elif (index == 1) :
-            data[1]= line.strip('\n')
-            print(data)
-            print("Please insert your ID:")
-            index = 2
+    answers = {}
 
-        else :
-            break
-    data[2]= line.strip('\n')
-    print(data)
-    print("\n\n\n\n DONE \n\n\n\n")
+    for question in questions:
+        answers[question] = input(f"Please insert {question}: ")
+        
+    answers["fullname"] = f"{answers['first name']} {answers['surname']}"
+    answers["name and surname"] = f"{answers['first name']} {answers['surname']}"
 
+    print(answers)
+    print("\n\n")
+    return answers
 
 
 def run():
+    config = parse_config('pdfff/config.yml')  
+    user_details = getInput()
     
-    getInput()
-
     source = Path('forms')
     fields = []
     for f in source.glob('*.pdf'):
@@ -49,28 +107,20 @@ def run():
     print('List of fields')
     print(set(fields))
 
+    print('List of fields \n\n\n')
 
-    data_dic = {
-    '1':'1', 
-    '2':'2', 
-    '0':'1234567890', 
-    '1_2':'1_2', 
-    '5 Nationality':'5 Nationality', 
-    '2_2':'2_2', 
-    '7 Ordinary places of residence during the 12 months prior to death and the Provinces':'7', 
-    '9 Place of birth':'9 Place of birth', 
-    '11Has the deceased left a will':
-    '11Has the deceased left a will', 
-    '12 Marital status at time of death':'12 Marital status at time of death', 
-    '13 If married place where married':'13 If married place where married', 
-    '14 Full names of surviving spouse':'14 Full names of surviving spouse', 
-    'and hisher IDPassport number':'and hisher IDPassport number', 
-    '15 State whether marriage was in or out of community of propertywhether accrual system is applicable':'15', 
-    'a Names of predeceased spouses andor divorced spouses state opposite name of each whether predeceased or divorced':'a', 
-    'b Date of death of predeceased spouses':'b', 
-    '16 Masters offices where predeceaseds estates isare registered and numbers of estates if available':'16'}
+    for config_file in config:
+        output_fields = {}
+        for question_id,field in config_file["fields"].items():
+            try:
+                output_fields[field] = user_details[question_id]
+            except KeyError:
+                continue
+        fillpdfs.write_fillable_pdf(f"forms/{config_file['filename']}", f"test/{config_file['filename']}", output_fields, False)
 
-    fillpdfs.write_fillable_pdf('forms/J294 - Death Notice.pdf', 'test/J294 - Death Notice_filled.pdf', data_dic, False)
+    print("\n\n Config File: \n\n")
+    print(config)
+    
 
 if __name__ == "__main__":
     run()
