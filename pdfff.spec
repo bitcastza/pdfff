@@ -2,8 +2,7 @@
 
 block_cipher = None
 
-
-a = Analysis(['_main_.py.py'],
+a = Analysis(['__main__.py'],
              pathex=['.'],
              datas=[ ('pdfff\config.yml', 'pdfff'),
                      ('forms\J155 - Undertaking and Acceptance of Masters Directions.pdf', '.'),
@@ -14,7 +13,7 @@ a = Analysis(['_main_.py.py'],
                      ('forms\Marital Status Declaration.pdf', '.'),
                      ('forms\Nomination to Act as Executor or Masters Representative.pdf', '.'),
                      ('forms\Reporting Affidavit.pdf', '.'),
-                     ('README.md', '.'),
+                     ('README.md', '.'),                     
                      ('LICENSE', '.')],
              hiddenimports=[],
              hookspath=[],
