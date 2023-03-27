@@ -130,3 +130,5 @@ dmypy.json
 # test/example files
 tests/
 OLD_TESTS/
+fields/
+output/
