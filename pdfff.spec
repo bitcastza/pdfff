@@ -4,7 +4,7 @@ block_cipher = None
 
 a = Analysis(['pdfff/__main__.py'],
              pathex=['.'],
-             datas=[ ('pdfff/config.yml', '.'),
+             datas=[ ('config.yml', '.'),
                      ('forms/J155 - Undertaking and Acceptance of Masters Directions.pdf', 'forms'),
                      ('forms/J190 - Acceptance of Trust as Executor.pdf', 'forms'),
                      ('forms/J192 - Next of Kin Affidavit.pdf', 'forms'),

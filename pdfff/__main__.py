@@ -37,19 +37,18 @@ def getInput():
         "deceased population group",
         "deceased nationality",
         "deceased occupation",
-        "deceased residence",
+        "deceased oridinary residence",
         "deceased place of birth",
         "deceased will",
         "deceased marital status",
         "deceased place of marriage",
-        "deceased wives",
+        "deceased number of wives",
         "surviving spouse id",
         "surviving spouse name",
         "surviving spouse address",
         "father of deceased",
         "mother of deceased",
-        "deceased customary unions",
-        "known liabilities",
+        "deceased number of customary unions",
         "agent name",
         "agent postal address",
         "agent telephone",
@@ -69,7 +68,8 @@ def getInput():
         "predeceased spouse date of death",
         "names of children of deceased",
         "capacity",
-        "signatory presence",
+        "signatory presence at death",
+        "signatory identification of deceased",
         "known since",
         "person nominated",
         "estate late",
@@ -87,9 +87,6 @@ def getInput():
         "applicant full name and id"
     ] = f"{answers['applicant full name']}, {answers['applicant id']}"
     answers[
-        "applicant full name and address"
-    ] = f"{answers['applicant full name']}, {answers['applicant business address']}"
-    answers[
         "deceased full name"
     ] = f"{answers['deceased first name']} {answers['deceased surname']}"
     answers[
@@ -98,6 +95,9 @@ def getInput():
     answers[
         "applicant residential address"
     ] = f"{answers['applicant residential address line 1']} {answers['applicant residential address line 2']} {answers['applicant residential address line 3']}"
+    answers[
+        "applicant full name and address"
+    ] = f"{answers['applicant full name']}, {answers['applicant residential address']}"
     today = datetime.date.today()
     answers["current day"] = f"{today.day}"
     answers["current month"] = f"{today.strftime('%B')}"
@@ -121,7 +121,7 @@ def getInput():
 
 
 def run():
-    config = parse_config("pdfff/config.yml")
+    config = parse_config("config.yml")
     user_details = getInput()
 
     source = Path("forms")

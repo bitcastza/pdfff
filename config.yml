@@ -24,7 +24,6 @@
     agent postal address: Text11-2
     agent telephone area: Text11-3
     agent telephone remainder: Text11-4
-    known liabilities: "0"
 
 - filename: J190 - Acceptance of Trust as Executor.pdf
   fields:
@@ -45,10 +44,11 @@
     deceased income tax ref. no: Income tax ref No
     deceased district: District in which deceased normally resided
     surviving spouse name: Name of surviving spouse in case of deceased having been a married woman
-    applicant business address: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
     signed at: signed at
     current day and month: signed on
     current year: year
+    bond of security: rand
+    applicant residential address: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
 
 - filename: J192 - Next of Kin Affidavit.pdf
   fields:
@@ -57,7 +57,7 @@
       - Print Name and Surname
     applicant residential address: of 1
     signed at: at
-    current day: 0
+    current day: "0"
     current month: day of
     current year: year
     magistrate: MagistrateJustice of the PeaceCommissioner of Oaths
@@ -99,7 +99,7 @@
     deceased population group: "1_2"
     deceased nationality: 5 Nationality
     deceased occupation: "2_2"
-    deceased residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
+    deceased ordinary residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
     deceased date of birth: 9 Place of birth
     deceased place of birth: 8 Date of birth
     deceased date of death: 10 Date of death
@@ -116,7 +116,8 @@
     mother of deceased: b Mother
     applicant full name and address: 19 Name and address of person signing the death notice
     capacity: 20 Capacity
-    signatory presence: 21 a Was the signatory present at the deceaseds death
+    signatory presence at death: 21 a Was the signatory present at the deceaseds death
+    signatory identification of deceased: b If the answer to the previous question is no did the signatory identify the deceased after his death
     current date:
     current day:
     current month:
@@ -128,8 +129,8 @@
     applicant residential address: Of Address 1
     deceased full name: Deseaced
     known since: Was well known to me since
-    deceased wives: nr1
-    deceased customary unions: nr2
+    deceased number of wives: nr1
+    deceased number of customary unions: nr2
     signed at: Signed and sworn toaffirmed before me at
     current day: This
     current month: Day of
@@ -138,14 +139,15 @@
 
 - filename: Nomination to Act as Executor or Masters Representative.pdf
   fields:
-    estate late: Estate late
+    estate number: Estate late
     person nominated: I  We the undersigned hereby nominates
 
 - filename: Reporting Affidavit.pdf
   fields:
     applicant full name: I
-    estate late: estate
-    deceased full name: the late
+    deceased full name:
+      - estate
+      - the late
     answer1: Answer
     answer2: Answer_2
     answer3: Answer_3
