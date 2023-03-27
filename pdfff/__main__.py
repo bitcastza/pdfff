@@ -63,7 +63,7 @@ def getInput():
         "dead sibling info",
         "massed estate",
         "minors under tutorship",
-        "address granted",
+        "minor address",
         "marriage info",
         "predeceased or divorced spouse names",
         "predeceased spouse date of death",
@@ -95,6 +95,9 @@ def getInput():
     answers[
         "applicant residential address line 2 and 3"
     ] = f"{answers['applicant residential address line 2']} {answers['applicant residential address line 3']}"
+    answers[
+        "applicant residential address"
+    ] = f"{answers['applicant residential address line 1']} {answers['applicant residential address line 2']} {answers['applicant residential address line 3']}"
     today = datetime.date.today()
     answers["current day"] = f"{today.day}"
     answers["current month"] = f"{today.strftime('%B')}"

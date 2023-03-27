@@ -82,7 +82,7 @@
     surviving spouse address: Address of surviving spouse
     massed estate: Massed estate of
     minors under tutorship: Full names of minors under tutorship or person in respect of whose property letters of curatorship have been granted
-    address granted: Full address
+    minor address: Full address
     applicant full name:
       - lfull name
       - name and surname
@@ -93,12 +93,12 @@
 
 - filename: J294 - Death Notice.pdf
   fields:
-    deceased surname: 1
-    deceased first name: 2
-    deceased id: 0
-    deceased population group: 1_2
+    deceased surname: "1"
+    deceased first name: "2"
+    deceased id: "0"
+    deceased population group: "1_2"
     deceased nationality: 5 Nationality
-    deceased occupation: 2_2
+    deceased occupation: "2_2"
     deceased residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
     deceased date of birth: 9 Place of birth
     deceased place of birth: 8 Date of birth
