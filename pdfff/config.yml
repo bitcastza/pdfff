@@ -1,140 +1,156 @@
 - filename: J155 - Undertaking and Acceptance of Masters Directions.pdf
   fields:
-    Deceased ID: Text4-1
-    Deceased Full Name: Text2
-    Estate No: Text1
-    Deceased Date of Death: Text3
-    Deceased District: Text5
-    fullname: Text6
-    id: Text4-1
-    Relationship to deceased: Text8
-    Residential Address: Text9-2
-    Postal Address: Text10-2
-    Home Tel: Text9-5
-    Work Tel: Text10-5
-    Agent Name and Postal Address: Text11-1
-    Agent Tel: Text11-4
-#---------------------------------------------------------------------------------------------------
+    deceased id: Text4-1
+    deceased full name: Text2
+    estate number: Text1
+    deceased date of death: Text3
+    deceased district: Text5
+    applicant full name:
+      - Text6
+      - Text13
+    applicant id: Text7-1
+    applicant relationship to deceased: Text8
+    applicant residential address line 1: Text9-1
+    applicant residential address line 2: Text9-2
+    applicant residential address line 3: Text9-3
+    applicant postal address line 1: Text10-1
+    applicant postal address line 2: Text10-2
+    applicant postal address line 3: Text10-3
+    applicant home telephone area: Text9-4
+    applicant home telephone remainder: Text9-5
+    applicant work telephone area: Text10-4
+    applicant work telephone remainder: Text10-5
+    agent name: Text11-1
+    agent postal address: Text11-2
+    agent telephone area: Text11-3
+    agent telephone remainder: Text11-4
+    known liabilities: "0"
+
 - filename: J190 - Acceptance of Trust as Executor.pdf
   fields:
-    Estate No: Estate No
-    fullname: 1 1
-    Business Address: Business adress1
-    id: 1
-    Relationship to deceased: Relationship to deceased
-    Deceased Full Name: Full names and surname
-    Deceased date of birth: Date of birth
-    Deceased Date of Death: Date of death
-    Deceased ID: Identity No
-    Deceased Income Tax Ref. No: Income tax ref No
-    Deceased District: District in which deceased normally resided
-    Surviving Spouse Name: Name of surviving spouse in case of deceased having been a married woman
-    Domicilium citandi et executandi: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
-    Bond of Security: rand
-    Agent Name and Postal Address: The name and address of myour agent is 1
-    Signed At: signed at
-    Current Day and Month: signed on
-    Current Year: year
-    name and surname: PRINT NAME AND SURNAME
-#---------------------------------------------------------------------------------------------------
+    estate number: Estate No
+    applicant full name:
+      - lWe full names and surname
+      - PRINT NAME AND SURNAME
+    applicant business address line 1: Business address1
+    applicant business address line 2: Business address2
+    applicant business address line 3: Business address3
+    applicant work telephone: "0"
+    applicant id: ID
+    applicant relationship to deceased: Relationship to deceased
+    deceased full name: Full names and surname
+    deceased date of birth: Date of birth
+    deceased date of death: Date of death
+    deceased id: Identity No
+    deceased income tax ref. no: Income tax ref No
+    deceased district: District in which deceased normally resided
+    surviving spouse name: Name of surviving spouse in case of deceased having been a married woman
+    applicant business address: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
+    signed at: signed at
+    current day and month: signed on
+    current year: year
+
 - filename: J192 - Next of Kin Affidavit.pdf
   fields:
-    fullname and id: I
-    Residential Address: of 1
-    fullname: Print Name and Surname
-    Signed At: at
-    Current Day: 0
-    Current Month: day of
-    Current Year: year
-    Magistrate: MagistrateJustice of the PeaceCommissioner of Oaths
-    Appointed Area: Area for which appointed
-    State Office Held: If appointment is held ex officio state office held
-    Deceased Full Name:
-    Deceased Place of Death: died at
-    Deceased Date of Death: date
-    Surviving Spouse Name: Names of relatives and degree of relationship1  Surviving spouse
-    Children Info: Names of relatives and degree of relationship2 Children and date of their birth Also state names of predeceased children and their dates of death
-    Father of Deceased: Names of relatives and degree of relationshipIgnore questions 3 4 and 5 if the deceased left children or descendants 3 Father of deceased Mother of deceased
-    Mother of Deceased: Names of relatives and degree of relationshipIgnore questions 3 4 and 5 if the deceased left children or descendants 3 Father of deceased Mother of deceased
-    Sibling Info: Names of relatives and degree of relationshipIgnore questions 4 and 5 if the parents are both alive 4  Brothers and sisters of the deceased  State whether full or half blood and their addresses and dates of birth State the name of the stepparent of half b\\\rrothers and half sisters
-    Dead Sibling Info: Names of relatives and degree of relationship5 Names of brothers and sisters who are dead date of deaths and names addresses and dates of birth of their children if any
-#---------------------------------------------------------------------------------------------------
+    applicant full name:
+      - I
+      - Print Name and Surname
+    applicant residential address: of 1
+    signed at: at
+    current day: 0
+    current month: day of
+    current year: year
+    magistrate: MagistrateJustice of the PeaceCommissioner of Oaths
+    appointed area: Area for which appointed
+    state office held: If appointment is held ex officio state office held
+    deceased full name:
+    deceased place of death: died at
+    deceased date of death: date
+    surviving spouse name: Names of relatives and degree of relationship1  Surviving spouse
+    children info: Names of relatives and degree of relationship2 Children and date of their birth Also state names of predeceased children and their dates of death
+    father of deceased: Names of relatives and degree of relationshipIgnore questions 3 4 and 5 if the deceased left children or descendants 3 Father of deceased Mother of deceased
+    mother of deceased: Names of relatives and degree of relationshipIgnore questions 3 4 and 5 if the deceased left children or descendants 3 Father of deceased Mother of deceased
+    sibling info: |-
+      Names of relatives and degree of relationshipIgnore questions 4 and 5 if the parents are both alive 4  Brothers and sisters of the deceased  State whether full or half blood and their addresses and dates of birth State the name of the stepparent of half b\
+      rothers and half sisters
+    dead sibling info: Names of relatives and degree of relationship5 Names of brothers and sisters who are dead date of deaths and names addresses and dates of birth of their children if any
+
 - filename: J243 - Estate Inventory.pdf
   fields:
-    Deceased Full Name: name
-    Surviving Spouse Name: Full name of surviving spouse in a case where spouses were married in community of property
-    Surviving Spouse Address: Address of surviving spouse
-    Massed Estate: Massed estate of
-    Minors Under Tutorship: Full names of minors under tutorship or person in respect of whose property letters of curatorship have been granted
-    Address Granted: Full address
-    fullname: lfull name
-    Address: of full address
-    Deceased Place of Death: premises at
-    Signed At: Place
-    Current Date: Date
-    name and surname: name and surname
-#---------------------------------------------------------------------------------------------------
+    deceased full name: name
+    surviving spouse name: Full name of surviving spouse in a case where spouses were married in community of property
+    surviving spouse address: Address of surviving spouse
+    massed estate: Massed estate of
+    minors under tutorship: Full names of minors under tutorship or person in respect of whose property letters of curatorship have been granted
+    address granted: Full address
+    applicant full name:
+      - lfull name
+      - name and surname
+    applicant residential address: of full address
+    deceased place of death: premises at
+    signed at: Place
+    current date: Date
+
 - filename: J294 - Death Notice.pdf
   fields:
-    Deceased Surname: 1
-    Deceased First Names: 2
-    Deceased ID: 0
-    Deceased Population Group: 1_2
-    Deceased Nationality: 5 Nationality
-    Deceased Occupation: 2_2
-    Deceased Residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
-    Deceased date of birth: 9 Place of birth
-    Deceased Place of Birth: 8 Date of birth
-    Deceased Date of Death: 10 Date of death
-    Deceased Will: 11Has the deceased left a will
-    Deceased Marital Status: 12 Marital status at time of death
-    Deceased Place of Marriage: 13 If married place where married
-    Surviving Spouse Name: 14 Full names of surviving spouse
-    Surviving Spouse ID: and hisher IDPassport number
-    Marriage Info: 15 State whether marriage was in or out of community of propertywhether accrual system is applicable
-    Predeceased or Divorced Spouse Names: a Names of predeceased spouses andor divorced spouses state opposite name of each whether predeceased or divorced
-    Predeceased Spouse Date of Death: b Date of death of predeceased spouses
-    Names of Children of Deceased: if that be the case the full names of such issue 1
-    Father of Deceased: a Father
-    Mother of Deceased: b Mother
-    fullname and address: 19 Name and address of person signing the death notice
-    Capacity: 20 Capacity
-    Signatory Presence: 21 a Was the signatory present at the deceaseds death
-    Current Date:
-    Current Day:
-    Current Month:
-    Current Year: in the year
-#---------------------------------------------------------------------------------------------------
+    deceased surname: 1
+    deceased first name: 2
+    deceased id: 0
+    deceased population group: 1_2
+    deceased nationality: 5 Nationality
+    deceased occupation: 2_2
+    deceased residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
+    deceased date of birth: 9 Place of birth
+    deceased place of birth: 8 Date of birth
+    deceased date of death: 10 Date of death
+    deceased will: 11Has the deceased left a will
+    deceased marital status: 12 Marital status at time of death
+    deceased place of marriage: 13 If married place where married
+    surviving spouse name: 14 Full names of surviving spouse
+    surviving spouse id: and hisher IDPassport number
+    marriage info: 15 State whether marriage was in or out of community of propertywhether accrual system is applicable
+    predeceased or divorced spouse names: a Names of predeceased spouses andor divorced spouses state opposite name of each whether predeceased or divorced
+    predeceased spouse date of death: b Date of death of predeceased spouses
+    names of children of deceased: if that be the case the full names of such issue 1
+    father of deceased: a Father
+    mother of deceased: b Mother
+    applicant full name and address: 19 Name and address of person signing the death notice
+    capacity: 20 Capacity
+    signatory presence: 21 a Was the signatory present at the deceaseds death
+    current date:
+    current day:
+    current month:
+    current year: in the year
+
 - filename: Marital Status Declaration.pdf
   fields:
-    fullname: I
-    Address: Of Address 1
-    Deceased Full Name: Deseaced
-    KnownSince: Was well known to me since
-    Deceased Wives: nr1
-    Deceased Customary Unions: nr2
-    Signed At: Signed and sworn toaffirmed before me at
-    Current Day: This
-    Current Month: Day of
-    Current Year: in the year
-    Appointed Area: Area for which appointed
-#---------------------------------------------------------------------------------------------------
+    applicant full name: I
+    applicant residential address: Of Address 1
+    deceased full name: Deseaced
+    known since: Was well known to me since
+    deceased wives: nr1
+    deceased customary unions: nr2
+    signed at: Signed and sworn toaffirmed before me at
+    current day: This
+    current month: Day of
+    current year: in the year
+    appointed area: Area for which appointed
+
 - filename: Nomination to Act as Executor or Masters Representative.pdf
   fields:
-    Estate Late: Estate late
-    Person Nominated: I  We the undersigned hereby nominates
-#---------------------------------------------------------------------------------------------------
+    estate late: Estate late
+    person nominated: I  We the undersigned hereby nominates
+
 - filename: Reporting Affidavit.pdf
   fields:
-    fullname: I
-    Estate Late: estate
-    Deceased Full Name: the late
-    Answer1: Answer
-    Answer2: Answer_2
-    Answer3: Answer_3
-    Signed At: Signed and sworn toaffirmed before me at
-    Current Day: This
-    Current Month: Day of
-    Current Year: in the year
-    Appointed Area: Area for which appointed
-#---------------------------------------------------------------------------------------------------
+    applicant full name: I
+    estate late: estate
+    deceased full name: the late
+    answer1: Answer
+    answer2: Answer_2
+    answer3: Answer_3
+    signed at: Signed and sworn toaffirmed before me at
+    current day: This
+    current month: Day of
+    current year: in the year
+    appointed area: Area for which appointed
