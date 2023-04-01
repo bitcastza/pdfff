@@ -72,7 +72,6 @@ def getInput():
         "signatory identification of deceased",
         "known since",
         "person nominated",
-        "estate late",
     ]
 
     answers = {}
