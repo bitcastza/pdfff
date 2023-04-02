@@ -20,7 +20,7 @@
     Estate No: Estate No
     fullname: 1 1
     Business Address: Business adress1
-    id: 1
+    id: "1"
     Relationship to deceased: Relationship to deceased
     Deceased Full Name: Full names and surname
     Deceased date of birth: Date of birth
@@ -43,7 +43,7 @@
     Residential Address: of 1
     fullname: Print Name and Surname
     Signed At: at
-    Current Day: 0
+    Current Day: "0"
     Current Month: day of
     Current Year: year
     Magistrate: MagistrateJustice of the PeaceCommissioner of Oaths
@@ -76,12 +76,12 @@
 #---------------------------------------------------------------------------------------------------
 - filename: J294 - Death Notice.pdf
   fields:
-    Deceased Surname: 1
-    Deceased First Names: 2
-    Deceased ID: 0
-    Deceased Population Group: 1_2
+    Deceased Surname: "1"
+    Deceased First Names: "2"
+    Deceased ID: "0"
+    Deceased Population Group: "1_2"
     Deceased Nationality: 5 Nationality
-    Deceased Occupation: 2_2
+    Deceased Occupation: "2_2"
     Deceased Residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
     Deceased date of birth: 9 Place of birth
     Deceased Place of Birth: 8 Date of birth
