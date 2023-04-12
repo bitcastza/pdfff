@@ -54,7 +54,7 @@ def getInput():
         "agent telephone",
         "bond of security",
         "signed at",
-        "magistrate",
+        "commissioner of oaths",
         "appointed area",
         "state office held",
         "children info",

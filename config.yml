@@ -60,7 +60,7 @@
     current day: "0"
     current month: day of
     current year: year
-    magistrate: MagistrateJustice of the PeaceCommissioner of Oaths
+    commissioner of oaths: MagistrateJustice of the PeaceCommissioner of Oaths
     appointed area: Area for which appointed
     state office held: If appointment is held ex officio state office held
     deceased full name:
@@ -141,6 +141,9 @@
   fields:
     deceased full name: Estate late
     person nominated: I  We the undersigned hereby nominates
+    surviving spouse name: NameRow1
+    relationship to deceased: Relationship  CapacityRow1
+    current date: DateRow1
 
 - filename: Reporting Affidavit.pdf
   fields:
