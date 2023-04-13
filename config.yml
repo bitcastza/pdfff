@@ -5,21 +5,21 @@
     estate number: Text1
     deceased date of death: Text3
     deceased district: Text5
-    applicant full name:
+    executor full name:
       - Text6
       - Text13
-    applicant id: Text7-1
-    applicant relationship to deceased: Text8
-    applicant residential address line 1: Text9-1
-    applicant residential address line 2: Text9-2
-    applicant residential address line 3: Text9-3
-    applicant postal address line 1: Text10-1
-    applicant postal address line 2: Text10-2
-    applicant postal address line 3: Text10-3
-    applicant home telephone area: Text9-4
-    applicant home telephone remainder: Text9-5
-    applicant work telephone area: Text10-4
-    applicant work telephone remainder: Text10-5
+    executor id: Text7-1
+    executor relationship to deceased: Text8
+    executor residential address line 1: Text9-1
+    executor residential address line 2: Text9-2
+    executor residential address line 3: Text9-3
+    executor postal address line 1: Text10-1
+    executor postal address line 2: Text10-2
+    executor postal address line 3: Text10-3
+    executor home telephone area: Text9-4
+    executor home telephone remainder: Text9-5
+    executor work telephone area: Text10-4
+    executor work telephone remainder: Text10-5
     agent name: Text11-1
     agent postal address: Text11-2
     agent telephone area: Text11-3
@@ -28,15 +28,15 @@
 - filename: J190 - Acceptance of Trust as Executor.pdf
   fields:
     estate number: Estate No
-    applicant full name:
+    executor full name:
       - lWe full names and surname
       - PRINT NAME AND SURNAME
-    applicant business address line 1: Business address1
-    applicant business address line 2: Business address2
-    applicant business address line 3: Business address3
-    applicant work telephone: "0"
-    applicant id: ID
-    applicant relationship to deceased: Relationship to deceased
+    executor business address line 1: Business address1
+    executor business address line 2: Business address2
+    executor business address line 3: Business address3
+    executor work telephone: "0"
+    executor id: ID
+    executor relationship to deceased: Relationship to deceased
     deceased full name: Full names and surname
     deceased date of birth: Date of birth
     deceased date of death: Date of death
@@ -48,14 +48,14 @@
     current day and month: signed on
     current year: year
     bond of security: rand
-    applicant residential address: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
+    executor residential address: contemplated in the Administration of Estates Act No 66 of 1965 as amended at not PO box number
 
 - filename: J192 - Next of Kin Affidavit.pdf
   fields:
-    applicant full name:
+    executor full name:
       - I
       - Print Name and Surname
-    applicant residential address: of 1
+    executor residential address: of 1
     signed at: at
     current day: "0"
     current month: day of
@@ -83,10 +83,10 @@
     massed estate: Massed estate of
     minors under tutorship: Full names of minors under tutorship or person in respect of whose property letters of curatorship have been granted
     minor address: Full address
-    applicant full name:
+    executor full name:
       - lfull name
       - name and surname
-    applicant residential address: of full address
+    executor residential address: of full address
     deceased place of death: premises at
     signed at: Place
     current date: Date
@@ -114,7 +114,7 @@
     names of children of deceased: if that be the case the full names of such issue 1
     father of deceased: a Father
     mother of deceased: b Mother
-    applicant full name and address: 19 Name and address of person signing the death notice
+    executor full name and address: 19 Name and address of person signing the death notice
     capacity: 20 Capacity
     signatory presence at death: 21 a Was the signatory present at the deceaseds death
     signatory identification of deceased: b If the answer to the previous question is no did the signatory identify the deceased after his death
@@ -125,8 +125,8 @@
 
 - filename: Marital Status Declaration.pdf
   fields:
-    applicant full name: I
-    applicant residential address: Of Address 1
+    executor full name: I
+    executor residential address: Of Address 1
     deceased full name: Deseaced
     known since: Was well known to me since
     deceased number of wives: nr1
@@ -147,7 +147,7 @@
 
 - filename: Reporting Affidavit.pdf
   fields:
-    applicant full name: I
+    executor full name: I
     deceased full name:
       - estate
       - the late

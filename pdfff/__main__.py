@@ -11,21 +11,21 @@ def getInput():
 
     questions = [
         "estate number",
-        "applicant id",
-        "applicant first name",
-        "applicant surname",
-        "applicant relationship to deceased",
-        "applicant residential address line 1",
-        "applicant residential address line 2",
-        "applicant residential address line 3",
-        "applicant postal address line 1",
-        "applicant postal address line 2",
-        "applicant postal address line 3",
-        "applicant business address line 1",
-        "applicant business address line 2",
-        "applicant business address line 3",
-        "applicant home telephone",
-        "applicant work telephone",
+        "executor id",
+        "executor first name",
+        "executor surname",
+        "executor relationship to deceased",
+        "executor residential address line 1",
+        "executor residential address line 2",
+        "executor residential address line 3",
+        "executor postal address line 1",
+        "executor postal address line 2",
+        "executor postal address line 3",
+        "executor business address line 1",
+        "executor business address line 2",
+        "executor business address line 3",
+        "executor home telephone",
+        "executor work telephone",
         "deceased id",
         "deceased first name",
         "deceased surname",
@@ -80,23 +80,23 @@ def getInput():
         answers[question] = input(f"Please insert {question}: ")
 
     answers[
-        "applicant full name"
-    ] = f"{answers['applicant first name']} {answers['applicant surname']}"
+        "executor full name"
+    ] = f"{answers['executor first name']} {answers['executor surname']}"
     answers[
-        "applicant full name and id"
-    ] = f"{answers['applicant full name']}, {answers['applicant id']}"
+        "executor full name and id"
+    ] = f"{answers['executor full name']}, {answers['executor id']}"
     answers[
         "deceased full name"
     ] = f"{answers['deceased first name']} {answers['deceased surname']}"
     answers[
-        "applicant residential address line 2 and 3"
-    ] = f"{answers['applicant residential address line 2']} {answers['applicant residential address line 3']}"
+        "executor residential address line 2 and 3"
+    ] = f"{answers['executor residential address line 2']} {answers['executor residential address line 3']}"
     answers[
-        "applicant residential address"
-    ] = f"{answers['applicant residential address line 1']} {answers['applicant residential address line 2']} {answers['applicant residential address line 3']}"
+        "executor residential address"
+    ] = f"{answers['executor residential address line 1']} {answers['executor residential address line 2']} {answers['executor residential address line 3']}"
     answers[
-        "applicant full name and address"
-    ] = f"{answers['applicant full name']}, {answers['applicant residential address']}"
+        "executor full name and address"
+    ] = f"{answers['executor full name']}, {answers['executor residential address']}"
     today = datetime.date.today()
     answers["current day"] = f"{today.day}"
     answers["current month"] = f"{today.strftime('%B')}"
@@ -106,12 +106,12 @@ def getInput():
     answers["answer1"] = "yes"
     answers["answer2"] = "yes"
     answers["answer3"] = "yes"
-    answers["applicant home telephone area"] = answers["applicant home telephone"][:3]
-    answers["applicant home telephone remainder"] = answers["applicant home telephone"][
+    answers["executor home telephone area"] = answers["executor home telephone"][:3]
+    answers["executor home telephone remainder"] = answers["executor home telephone"][
         3:
     ]
-    answers["applicant work telephone area"] = answers["applicant work telephone"][:3]
-    answers["applicant work telephone remainder"] = answers["applicant work telephone"][
+    answers["executor work telephone area"] = answers["executor work telephone"][:3]
+    answers["executor work telephone remainder"] = answers["executor work telephone"][
         3:
     ]
     answers["agent telephone area"] = answers["agent telephone"][:3]
