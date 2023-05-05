@@ -100,8 +100,8 @@
     deceased nationality: 5 Nationality
     deceased occupation: "2_2"
     deceased ordinary residence: 7 Ordinary places of residence during the 12 months prior to death and the Provinces
-    deceased date of birth: 9 Place of birth
-    deceased place of birth: 8 Date of birth
+    deceased place of birth: 9 Place of birth
+    deceased date of birth: 8 Date of birth
     deceased date of death: 10 Date of death
     deceased will: 11Has the deceased left a will
     deceased marital status: 12 Marital status at time of death
