@@ -18,4 +18,6 @@ This assumes that you are running on Linux and building an executable via Wine.
 wine pip.exe install pyinstaller
 wine pip.exe install -e .
 wine pyinstaller.exe pdfff.spec
+cd dist
+zip -r pdfff.zip pdfff/
 ```
